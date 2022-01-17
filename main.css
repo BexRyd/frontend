@@ -1,0 +1,22 @@
+#login-btn {
+  cursor: not-allowed;
+}
+.g-recaptcha {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#consent-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2 rem;
+  background-color: rgb(184, 182, 182);
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.hidden {
+  opacity: 0;
+}

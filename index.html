@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form method="post">
+      <label>username</label>
+      <input id="user" name="user" type="text" />
+      <label>password</label>
+      <input id="password" type="password" name="password" />
+
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LfEWhUeAAAAAJYldafIBiELGdv6YRdA1y_wvrMA"
+        data-callback="recaptcha_callback"
+      ></div>
+      <input type="submit" id="login-btn" disabled />
+      <div id="consent-popup" class="hidden">
+        <p>
+          By using this you agree to our
+          <a href="#">Terms and conditions.</a> please
+          <a href="accept" href="#">accept</a> these before using our site.
+        </p>
+      </div>
+
+      <script src="app.js"></script>
+    </form>
+  </body>
+</html>
