@@ -4,7 +4,7 @@ document.addEventListener("submit", (event) => {
   let password = document.getElementById("password").value;
 
   let request = new XMLHttpRequest();
-  request.open("POST", "http://localhost:5500/authorize");
+  request.open("POST", "http://127.0.0.1:3000/authorize");
   //request.send(new FormData(formElement));
   console.log("Validated");
 
@@ -96,9 +96,30 @@ function hiddenfunction() {
     x.style.display = "block";
   } else if (password.value === "password" && user.value === "user") {
     x.style.display = "none";
+    var application = document.getElementById("application");
+    application.style.display = "block";
   }
   recaptcha_callback();
 }
+
+function logOutFunction() {
+  let deleteContainer = document.getElementById("deleteContainer");
+  deleteContainer.style.display = "block";
+  let application = document.getElementById("application");
+  application.style.display = "none";
+  window.location.reload();
+}
+
+function rejectCookieFunction() {
+  let rejectPopup = document.getElementById("rejectPopup");
+  rejectPopup.style.display = "block";
+  document.getElementById("cookiePopup").style.display = "none";
+}
+
+let acceptCookie_text = document.getElementById("cookieConsent");
+
+acceptCookie_text.addEventListener("click", function () {});
+
 // site key
 //6LfEWhUeAAAAAJYldafIBiELGdv6YRdA1y_wvrMA
 //secret key

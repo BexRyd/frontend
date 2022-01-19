@@ -40,6 +40,14 @@
       <input onclick= hiddenfunction() type="submit" value="Login" disabled id="register-btn" />
     </form>
 
+    <div id="rejectPopup">
+      <p>
+        Our website uses cookies to provide your browsing experience and
+        relavent informations.Before continuing to use our website,agree &
+        <a href="#" id="cookieConsent">accept </a>our <a href="#">Cookie Policy & Privacy</a>
+      </p>
+    </div>
+
     <div id="cookiePopup">
       <h4>Cookie Consent</h4>
       <p></p>
@@ -47,8 +55,14 @@
         relavent informations.Before continuing to use our website, you agree &
         accept of our <a href="#">Cookie Policy & Privacy</a>
       </p>
+      <button onclick=rejectCookieFunction() id="rejectCookie">Reject</button>
       <button id="acceptCookie">Accept</button>
+     
     </div>
+    </div>
+    <div id="application">
+      <h1>Hej</h1>
+      <button onclick= logOutFunction() type="submit" value="log-out" id="log-outBtn">Log out</button>
     </div>
 
     <script src="app.js"></script>
