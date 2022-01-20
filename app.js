@@ -116,9 +116,23 @@ function rejectCookieFunction() {
   document.getElementById("cookiePopup").style.display = "none";
 }
 
-let acceptCookie_text = document.getElementById("cookieConsent");
+// when users click the raccept button
+let acceptNewCookie = document.getElementById("cookieConsent");
+acceptNewCookie.onclick = function () {
+  createNewCookie(cookieName, cookieValue, cookieExpireDays);
+  //uppdaterar
+  window.location.reload();
+};
 
-acceptCookie_text.addEventListener("click", function () {});
+// function to set cookie in web browser
+let createNewCookie = function (cookieName, cookieValue, cookieExpireDays) {
+  let currentDate = new Date();
+  currentDate.setTime(
+    currentDate.getTime() + cookieExpireDays * 24 * 60 * 60 * 1000
+  );
+  let expires = "expires=" + currentDate.toGMTString();
+  document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+};
 
 // site key
 //6LfEWhUeAAAAAJYldafIBiELGdv6YRdA1y_wvrMA
