@@ -84,7 +84,7 @@ let checkCookie = function () {
 checkCookie();
 
 function recaptcha_callback() {
-  let registerBtn = document.querySelector("#register-btn");
+  let registerBtn = document.querySelector("#login-btn");
   registerBtn.removeAttribute("disabled");
   registerBtn.style.cursor = "pointer";
 }
@@ -94,7 +94,12 @@ function hiddenfunction() {
   let x = document.getElementById("deleteContainer");
   if (x.style.display === "none") {
     x.style.display = "block";
-  } else if (password.value === "password" && user.value === "user") {
+  } else if (
+    (password.value === "password" && user.value === "user") ||
+    (password.value === "Pannika" && user.value === "Annika") ||
+    (password.value === "Pan" && user.value === "Dan") ||
+    (password.value === "Bläbläblä" && user.value === "Rebecca")
+  ) {
     x.style.display = "none";
     var application = document.getElementById("application");
     application.style.display = "block";

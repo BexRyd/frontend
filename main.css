@@ -10,11 +10,12 @@ form {
   padding: 1em 1em;
 }
 
-#register-btn {
+#register-btn,
+#login-btn {
   cursor: not-allowed;
   background-color: white;
   margin: 0 0 1em;
-  width: 5em;
+  width: 8em;
 }
 
 #password {
