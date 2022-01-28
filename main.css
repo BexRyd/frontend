@@ -59,16 +59,27 @@ form {
 .writePassword {
   margin: 0;
   font-size: 20px;
+  font-family: marvel;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 #login-btn {
   cursor: not-allowed;
-  background-color: white;
+  background-color: rgb(237, 29, 36);
   margin: 0 0 1em;
-  width: 10em;
-  height: 3em;
+  width: 6em;
+  height: 2em;
   border-radius: 10px;
-  font-size: 20px;
+  padding-left: 10px;
+
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: marvel;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: bolder;
 }
 #login-btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.4);
@@ -131,4 +142,9 @@ form {
 }
 #log-outBtn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
+@font-face {
+  font-family: marvel;
+  src: url(font/Marvel-Regular.ttf);
 }
