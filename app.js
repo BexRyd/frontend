@@ -103,10 +103,39 @@ function hiddenfunction() {
     x.style.display = "none";
     var application = document.getElementById("application");
     application.style.display = "block";
+    var img = document.getElementById("img");
+    img.style.display = "none";
   }
   recaptcha_callback();
 }
 
+function marvelFunction() {
+  let marvelHero = [
+    "Spider-Man",
+    "Iron Man",
+    "Captain America",
+    "the Hulk",
+    "Thor",
+    "Wolverine",
+    "Ant-Man",
+    "the Wasp",
+    "Black Widow",
+    "Hawkeye",
+    "Captain Marvel",
+    "Black Panther",
+    "Doctor Strange",
+    "the Scarlet Witch",
+    "Quicksilver",
+    "She-Hulk",
+    "the Vision",
+    "the Falcon",
+    "the Winter Soldier",
+    "Ghost Rider",
+  ];
+  let randomHero = marvelHero[Math.floor(Math.random() * marvelHero.length)];
+
+  document.getElementById("secretPage").innerHTML = randomHero;
+}
 function logOutFunction() {
   let deleteContainer = document.getElementById("deleteContainer");
   deleteContainer.style.display = "block";

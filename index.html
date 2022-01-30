@@ -10,10 +10,10 @@
   </head>
   <body>
     <div id="Wrapper">
-      <img src="img/marvel-2.jpg" alt="marvel">
+      <img src="img/marvel-2.jpg"  alt="marvel" id="img">
     <div id="deleteContainer">
     <form method="post">
-      <p class="writePassword">Password:</p><br>
+      <p class="writePassword">User:</p><br>
       <input
         id="user"
         type="text"
@@ -44,7 +44,7 @@
     </form>
 
     <div id="rejectPopup">
-      <p>
+      <p id="cookieP">
         Our website uses cookies to provide your browsing experience and
         relavent informations.Before continuing to use our website,agree &
         <a href="#" id="cookieConsent">accept </a>our <a href="#">Cookie Policy & Privacy</a>
@@ -53,7 +53,7 @@
 
     <div id="cookiePopup">
       <h4>Cookie Consent</h4>
-      <p></p>
+      <p ></p>
         Our website uses cookies to provide your browsing experience and
         relavent informations.Before continuing to use our website, you agree &
         accept of our <a href="#">Cookie Policy & Privacy</a>
@@ -64,13 +64,16 @@
     </div>
     </div>
     <div id="application">
-      <h1>Hej</h1>
+      <img src="img/spiderman.jpg" id="spiderman" alt="spiderman">
+      <h1 class="secretPage" id="secretPage"></h1>
+      <button onclick=marvelFunction() type="submit" id="secretPageBtn" >Random Hero</button>
       <button onclick= logOutFunction() type="submit" value="log-out" id="log-outBtn">Log out</button>
     </div>
     
-
+  </div>
     <script src="app.js"></script>
+  
   </body>
-</div>
+
 </html>
 
