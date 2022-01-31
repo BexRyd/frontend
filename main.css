@@ -7,7 +7,7 @@ body {
   margin: auto;
 }
 
-h1 {
+h3 {
   font-family: marvel;
 }
 
@@ -47,12 +47,14 @@ img {
   background-color: black;
 }
 .secretPage {
-  font-size: 60px;
+  font-size: 30px;
   background-color: red;
   color: white;
   font-family: "Inter", sans-serif;
   margin-left: 15%;
   margin-right: 15%;
+  font-family: marvel;
+  letter-spacing: 7px;
 }
 a {
   color: red;
@@ -65,7 +67,7 @@ form,
   margin: auto;
   border-radius: 10%;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .writeUsername,
@@ -173,6 +175,6 @@ form,
 
 @media screen and (min-width: 1220px) {
   form {
-    margin-top: 13%;
+    margin-top: 16%;
   }
 }
